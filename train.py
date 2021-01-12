@@ -11,6 +11,7 @@ def training_loop(n_steps=50, cutoff=0.05, output_dir="./model/"):
 
     lr_schedule = trax.lr.warmup_and_rsqrt_decay(
         n_warmup_steps=1000, max_value=0.01)
+
     train_task = training.TrainTask(
         # labeled data
         labeled_data=train_gen,
