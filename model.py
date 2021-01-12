@@ -2,7 +2,7 @@ from trax import layers as tl
 import trax
 
 
-def ReformerLM(vocab_size=6000, n_layers=2, mode='train', attention_type=tl.SelfAttention):
+def ReformerLM(vocab_size=5945, n_layers=2, mode='train', attention_type=tl.SelfAttention):
     # 用基础的reformer
     model = trax.models.reformer.ReformerLM(
         vocab_size=vocab_size,
